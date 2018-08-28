@@ -3,5 +3,9 @@
 
 def key_for_min_value(name_hash)
   lowest_key = name_hash.sort_by { |key, value| value}.first
-  lowest_key.first
+  if name_hash = nil
+    nil
+  else
+    lowest_key.first
+  end
 end
