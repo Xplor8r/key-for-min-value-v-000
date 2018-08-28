@@ -5,7 +5,6 @@ def key_for_min_value(name_hash)
   lowest_key = name_hash.sort_by { |key, value| value}.first
   if name_hash != nil
     lowest_key.first
-  else
-    nil
   end
+  nil
 end
